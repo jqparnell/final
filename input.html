@@ -9,14 +9,26 @@
 </head>
   <body>
     <div class="text-center">
-		<h2>TYPE 100 UNIQUE WORDS</h2>
+		<br>
+      <h2>TYPE 100 UNIQUE WORDS</h2>
+      <h3>only lowercase letters will count!</h3>
 		<br><br><br><br>
-		<h3>
-			<a href="input.html" >BEGIN</a>
-		</h3>
+		
+    <div class="input-group input-group-lg">
+      <input type="text" class="form-control" id="word">
+    </div>
+    <!-- Example of a text input and a submit button -->
+    <form id="userInput">
+      <input type="text" id="enteredWord" placeholder="Enter a word">
+      <button type="button" id="addButton" onclick="saveInput()">Add</button>
+    </form>
+
+    
 	</div>
 	
-	<!-- <input class="col-12 offset-0 col-md-8 offset-md-2" type="text" id="username" name="username"> -->
+	<!-- <h3>
+			<a href="input.html" >BEGIN</a>
+		</h3> -->
 	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	<script src="./assets/js/main.js"></script>
