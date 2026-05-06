@@ -11,6 +11,9 @@ function saveInput() {
     console.log("Word count:", wordCount);
     console.log("Word list:", wordList);
     console.log("A count: ", aCount);
+    if (wordCount == 100) {
+        window.location.href = "results.html";
+    }
 }
 function whichLettersArePresent() {
     // const lettersPresent = [];
@@ -97,4 +100,82 @@ function whichLettersArePresent() {
     }
     // console.log("Letters present: ", lettersPresent);
     // return lettersPresent;
+}
+function aTotal() {
+    return aCount;
+}
+function bTotal() {
+    return bCount;
+}
+function cTotal() {
+    return cCount;
+}
+function dTotal() {
+    return dCount;
+}
+function eTotal() {
+    return eCount;
+}
+function fTotal() {
+    return fCount;
+}
+function gTotal() {
+    return gCount;
+}
+function hTotal() {
+    return hCount;
+}
+function iTotal() {
+    return iCount;
+}
+function jTotal() {
+    return jCount;
+}
+function kTotal() {
+    return kCount;
+}
+function lTotal() {
+    return lCount;
+}
+function mTotal() {
+    return mCount;
+}
+function nTotal() {
+    return nCount;
+}
+function oTotal() {
+    return oCount;
+}
+function pTotal() {
+    return pCount;
+}
+function qTotal() {
+    return qCount;
+}
+function rTotal() {
+    return rCount;
+}
+function sTotal() {
+    return sCount;
+}
+function tTotal() {
+    return tCount;
+}
+function uTotal() {
+    return uCount;
+}
+function vTotal() {
+    return vCount;
+}
+function wTotal() {
+    return wCount;
+}
+function xTotal() {
+    return xCount;
+}
+function yTotal() {
+    return yCount;
+}
+function zTotal() {
+    return zCount;
 }
