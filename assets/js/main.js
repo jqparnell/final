@@ -1,167 +1,171 @@
 // main.js
-const wordList = [];
-let wordCount = 0;
-let aCount=bCount=cCount=dCount=eCount=fCount=gCount=hCount=iCount=jCount=kCount=lCount=mCount=nCount=oCount=pCount=qCount=rCount=sCount=tCount=uCount=vCount=wCount=xCount=yCount=zCount = 0;
-const mostUsedLetter = '';
-const leastUsedLetter = '';
+wordList = [];
+var wordCount = 0;
+var aCount=bCount=cCount=dCount=eCount=fCount=gCount=hCount=iCount=jCount=kCount=lCount=mCount=nCount=oCount=pCount=qCount=rCount=sCount=tCount=uCount=vCount=wCount=xCount=yCount=zCount = 0;
+var mostUsedLetter = '';
+var leastUsedLetter = '';
 function findTotals() {
-    const letterAmounts = [aTotal(), bTotal(), cTotal(), dTotal(), eTotal(), fTotal(), gTotal(), hTotal(), iTotal(), jTotal(), kTotal(), lTotal(), mTotal(), nTotal(), oTotal(), pTotal(), qTotal(), rTotal(), sTotal(), tTotal(), uTotal(), vTotal(), wTotal(), xTotal(), yTotal(), zTotal()];
-    const max = Math.max(...letterAmounts);
-    const min = Math.min(...letterAmounts);
-    if (letterAmounts.indexOf(max) == 0) {
+    letterAmounts = [aTotal(), bTotal(), cTotal(), dTotal(), eTotal(), fTotal(), gTotal(), hTotal(), iTotal(), jTotal(), kTotal(), lTotal(), mTotal(), nTotal(), oTotal(), pTotal(), qTotal(), rTotal(), sTotal(), tTotal(), uTotal(), vTotal(), wTotal(), xTotal(), yTotal(), zTotal()];
+    var max = Math.max(...letterAmounts);
+    var min = Math.min(...letterAmounts);
+    console.log("ok we findin the totals");
+    if (letterAmounts.indexOf(max) === 0) {
         mostUsedLetter = 'a';
+        console.log("hi i made it to a");
     }
-    if (letterAmounts.indexOf(max) == 1) {
+    if (letterAmounts.indexOf(max) === 1) {
         mostUsedLetter = 'b';
+        console.log("hi i made it to b");
     }
-    if (letterAmounts.indexOf(max) == 2) {
+    if (letterAmounts.indexOf(max) === 2) {
         mostUsedLetter = 'c';
     }
-    if (letterAmounts.indexOf(max) == 3) {
+    if (letterAmounts.indexOf(max) === 3) {
         mostUsedLetter = 'd';
+        console.log("hi i made it to d");
     }
-    if (letterAmounts.indexOf(max) == 4) {
+    if (letterAmounts.indexOf(max) === 4) {
         mostUsedLetter = 'e';
     }
-    if (letterAmounts.indexOf(max) == 5) {
+    if (letterAmounts.indexOf(max) === 5) {
         mostUsedLetter = 'f';
     }
-    if (letterAmounts.indexOf(max) == 6) {
+    if (letterAmounts.indexOf(max) === 6) {
         mostUsedLetter = 'g';
     }
-    if (letterAmounts.indexOf(max) == 7) {
+    if (letterAmounts.indexOf(max) === 7) {
         mostUsedLetter = 'h';
     }
-    if (letterAmounts.indexOf(max) == 8) {
+    if (letterAmounts.indexOf(max) === 8) {
         mostUsedLetter = 'i';
     }
-    if (letterAmounts.indexOf(max) == 9) {
+    if (letterAmounts.indexOf(max) === 9) {
         mostUsedLetter = 'j';
     }
-    if (letterAmounts.indexOf(max) == 10) {
+    if (letterAmounts.indexOf(max) === 10) {
         mostUsedLetter = 'k';
     }
-    if (letterAmounts.indexOf(max) == 11) {
+    if (letterAmounts.indexOf(max) === 11) {
         mostUsedLetter = 'l';
     }
-    if (letterAmounts.indexOf(max) == 12) {
+    if (letterAmounts.indexOf(max) === 12) {
         mostUsedLetter = 'm';
     }
-    if (letterAmounts.indexOf(max) == 13) {
+    if (letterAmounts.indexOf(max) === 13) {
         mostUsedLetter = 'n';
     }
-    if (letterAmounts.indexOf(max) == 14) {
+    if (letterAmounts.indexOf(max) === 14) {
         mostUsedLetter = 'o';
     }
-    if (letterAmounts.indexOf(max) == 15) {
+    if (letterAmounts.indexOf(max) === 15) {
         mostUsedLetter = 'p';
     }
-    if (letterAmounts.indexOf(max) == 16) {
+    if (letterAmounts.indexOf(max) === 16) {
         mostUsedLetter = 'q';
     }
-    if (letterAmounts.indexOf(max) == 17) {
+    if (letterAmounts.indexOf(max) === 17) {
         mostUsedLetter = 'r';
     }
-    if (letterAmounts.indexOf(max) == 18) {
+    if (letterAmounts.indexOf(max) === 18) {
         mostUsedLetter = 's';
     }
-    if (letterAmounts.indexOf(max) == 19) {
+    if (letterAmounts.indexOf(max) === 19) {
         mostUsedLetter = 't';
     }
-    if (letterAmounts.indexOf(max) == 20) {
+    if (letterAmounts.indexOf(max) === 20) {
         mostUsedLetter = 'u';
     }
-    if (letterAmounts.indexOf(max) == 21) {
+    if (letterAmounts.indexOf(max) === 21) {
         mostUsedLetter = 'v';
     }
-    if (letterAmounts.indexOf(max) == 22) {
+    if (letterAmounts.indexOf(max) === 22) {
         mostUsedLetter = 'w';
     }
-    if (letterAmounts.indexOf(max) == 23) {
+    if (letterAmounts.indexOf(max) === 23) {
         mostUsedLetter = 'x';
     }
-    if (letterAmounts.indexOf(max) == 24) {
+    if (letterAmounts.indexOf(max) === 24) {
         mostUsedLetter = 'y';
     }
-    if (letterAmounts.indexOf(max) == 25) {
+    if (letterAmounts.indexOf(max) === 25) {
         mostUsedLetter = 'z';
     }
-    if (letterAmounts.indexOf(min) == 0) {
+    if (letterAmounts.indexOf(min) === 0) {
         leastUsedLetter = 'a';
     }
-    if (letterAmounts.indexOf(min) == 1) {
+    if (letterAmounts.indexOf(min) === 1) {
         leastUsedLetter = 'b';
     }
-    if (letterAmounts.indexOf(min) == 2) {
+    if (letterAmounts.indexOf(min) === 2) {
         leastUsedLetter = 'c';
     }
-    if (letterAmounts.indexOf(min) == 3) {
+    if (letterAmounts.indexOf(min) === 3) {
         leastUsedLetter = 'd';
     }
-    if (letterAmounts.indexOf(min) == 4) {
+    if (letterAmounts.indexOf(min) === 4) {
         leastUsedLetter = 'e';
     }
-    if (letterAmounts.indexOf(min) == 5) {
+    if (letterAmounts.indexOf(min) === 5) {
         leastUsedLetter = 'f';
     }
-    if (letterAmounts.indexOf(min) == 6) {
+    if (letterAmounts.indexOf(min) === 6) {
         leastUsedLetter = 'g';
     }
-    if (letterAmounts.indexOf(min) == 7) {
+    if (letterAmounts.indexOf(min) === 7) {
         leastUsedLetter = 'h';
     }
-    if (letterAmounts.indexOf(min) == 8) {
+    if (letterAmounts.indexOf(min) === 8) {
         leastUsedLetter = 'i';
     }
-    if (letterAmounts.indexOf(min) == 9) {
+    if (letterAmounts.indexOf(min) === 9) {
         leastUsedLetter = 'j';
     }
-    if (letterAmounts.indexOf(min) == 10) {
+    if (letterAmounts.indexOf(min) === 10) {
         leastUsedLetter = 'k';
     }
-    if (letterAmounts.indexOf(min) == 11) {
+    if (letterAmounts.indexOf(min) === 11) {
         leastUsedLetter = 'l';
     }
-    if (letterAmounts.indexOf(min) == 12) {
+    if (letterAmounts.indexOf(min) === 12) {
         leastUsedLetter = 'm';
     }
-    if (letterAmounts.indexOf(min) == 13) {
+    if (letterAmounts.indexOf(min) === 13) {
         leastUsedLetter = 'n';
     }
-    if (letterAmounts.indexOf(min) == 14) {
+    if (letterAmounts.indexOf(min) === 14) {
         leastUsedLetter = 'o';
     }
-    if (letterAmounts.indexOf(min) == 15) {
+    if (letterAmounts.indexOf(min) === 15) {
         leastUsedLetter = 'p';
     }
-    if (letterAmounts.indexOf(min) == 16) {
+    if (letterAmounts.indexOf(min) === 16) {
         leastUsedLetter = 'q';
     }
-    if (letterAmounts.indexOf(min) == 17) {
+    if (letterAmounts.indexOf(min) === 17) {
         leastUsedLetter = 'r';
     }
-    if (letterAmounts.indexOf(min) == 18) {
+    if (letterAmounts.indexOf(min) === 18) {
         leastUsedLetter = 's';
     }
-    if (letterAmounts.indexOf(min) == 19) {
+    if (letterAmounts.indexOf(min) === 19) {
         leastUsedLetter = 't';
     }
-    if (letterAmounts.indexOf(min) == 20) {
+    if (letterAmounts.indexOf(min) === 20) {
         leastUsedLetter = 'u';
     }
-    if (letterAmounts.indexOf(min) == 21) {
+    if (letterAmounts.indexOf(min) === 21) {
         leastUsedLetter = 'v';
     }
-    if (letterAmounts.indexOf(min) == 22) {
+    if (letterAmounts.indexOf(min) === 22) {
         leastUsedLetter = 'w';
     }
-    if (letterAmounts.indexOf(min) == 23) {
+    if (letterAmounts.indexOf(min) === 23) {
         leastUsedLetter = 'x';
     }
-    if (letterAmounts.indexOf(min) == 24) {
+    if (letterAmounts.indexOf(min) === 24) {
         leastUsedLetter = 'y';
     }
-    if (letterAmounts.indexOf(min) == 25) {
+    if (letterAmounts.indexOf(min) === 25) {
         leastUsedLetter = 'z';
     }
     document.getElementById("mostUsedLetter").value = mostUsedLetter;
@@ -178,7 +182,8 @@ function saveInput() {
     console.log("Word count:", wordCount);
     console.log("Word list:", wordList);
     console.log("A count: ", aCount);
-    if (wordCount == 100) {
+    console.log("B count: ", bCount);
+    if (wordCount == 10) {
         window.location.href = "results.html";
     }
 }
@@ -269,6 +274,7 @@ function whichLettersArePresent() {
     // return lettersPresent;
 }
 function aTotal() {
+    console.log("a count: ", aCount);
     return aCount;
 }
 function bTotal() {
