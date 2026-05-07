@@ -164,7 +164,10 @@ function findTotals() {
     if (letterAmounts.indexOf(min) == 25) {
         leastUsedLetter = 'z';
     }
-
+    document.getElementById("mostUsedLetter").value = mostUsedLetter;
+    document.getElementById("leastUsedLetter").value = leastUsedLetter;
+    console.log("Most used letter: ", mostUsedLetter);
+    console.log("Least used letter: ", leastUsedLetter);
 }
 
 function saveInput() {
